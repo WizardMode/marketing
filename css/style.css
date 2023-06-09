@@ -79,6 +79,28 @@ h1, h2, strong {
     display: flex; /* we want the social links next to each other */
     justify-content: center;
 }
+
+.footer-logo,
+.footer-text,
+.footer-fineprint {
+    opacity: .3
+}
+
+.footer-fineprint {
+    font-size: .75rem;
+    margin-top: 4em;
+}
+
+.social-link {
+    color: #000;
+    font-size: 1.75rem;
+    margin: 0 .5em;
+}
+
+.social-link:hover {
+    color: #777;
+}
+
 /* ===============
     hero area
 ================== */
