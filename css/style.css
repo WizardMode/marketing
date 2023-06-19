@@ -84,10 +84,17 @@ h1, h2, strong {
 .nav {
     position: fixed;
     background: #000;
+    width: 100%;
     top: 0;
     right: 0;
     bottom: 0;
-    left: 0;
+    left: 100%;
+    transform: translateX(0);
+    transition: transform 250ms;
+}
+
+.navigation-open {
+    transform: translateX(-100%);
 }
 
 .nav-list {
@@ -95,7 +102,7 @@ h1, h2, strong {
     list-style: none;
     margin: 0;
     padding: 0;
-    border: 2px solid magenta;
+    /*border: 2px solid magenta;*/
     height: 100%;
     align-items: center;
     justify-content: space-around;
@@ -123,6 +130,16 @@ h1, h2, strong {
     cursor: pointer;
     padding: .5em;
     position: absolute /* pull the button out of the flow(nav links)*/
+}
+
+.open-nav {
+    border: 0;
+    background: 0;
+    color: #fff;
+    cursor: pointer;
+    padding: .5em;
+    margin-left: auto;
+    font-size: 1.5em;
 }
 
 /* footer */
