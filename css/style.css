@@ -91,12 +91,18 @@ h1, h2, strong {
     font-weight: 700;
     margin-top: .5em;
     text-decoration: none;
+    border: 0;
 }
 
 .btn-primary {
     background: #FFE600;
     color: #000;
     justify-self: start; /* prevents button from stretching */
+}
+
+.btn-form {
+    margin-left: auto;
+/*  justify-self: end; <-- grid solution, to place button to the right */
 }
 
 /* ===============
@@ -380,4 +386,32 @@ h1, h2, strong {
     .main-text {
         grid-column: 3 / span 2;
     }
+
+    .secondary-text {
+        order: 2;
+    }
+}
+
+/* ==================
+    form
+===================== */
+
+.contact-form {
+    display: grid;
+}
+
+label {
+    font-weight: 700;
+}
+
+input,
+textarea {
+    margin-bottom: .5em;
+    padding: .4em;
+    font-family: inherit;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
 }
